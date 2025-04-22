@@ -39,6 +39,7 @@ const Navbar = () => {
           <a href="#services" className="text-black hover:text-brand-orange transition-colors">Services</a>
           <a href="#process" className="text-black hover:text-brand-orange transition-colors">Process</a>
           <a href="#case-studies" className="text-black hover:text-brand-orange transition-colors">Results</a>
+          <a href="/team" className="text-black hover:text-brand-orange transition-colors">Team</a>
           <Button asChild>
             <a href="#contact" className="ml-4 bg-brand-orange hover:bg-orange-600 text-white">Let's Talk</a>
           </Button>
@@ -59,6 +60,7 @@ const Navbar = () => {
           <a href="#services" className="text-black hover:text-brand-orange transition-colors" onClick={toggleMobileMenu}>Services</a>
           <a href="#process" className="text-black hover:text-brand-orange transition-colors" onClick={toggleMobileMenu}>Process</a>
           <a href="#case-studies" className="text-black hover:text-brand-orange transition-colors" onClick={toggleMobileMenu}>Results</a>
+          <a href="/team" className="text-black hover:text-brand-orange transition-colors" onClick={toggleMobileMenu}>Team</a>
           <Button asChild className="w-full bg-brand-orange hover:bg-orange-600 text-white">
             <a href="#contact" onClick={toggleMobileMenu}>Let's Talk</a>
           </Button>
@@ -69,3 +71,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
