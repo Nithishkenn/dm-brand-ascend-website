@@ -24,7 +24,7 @@ const Hero = () => {
           
           <div className="mt-4 inline-block overflow-hidden">
             <div className="animate-text-slide-up" style={{ animationDelay: '0.4s' }}>
-              <Button asChild size="lg" className="shine-button border-black text-black group-hover:text-white py-6 text-lg">
+              <Button asChild size="lg" className="shine-button border-black text-black hover:text-white py-6 text-lg">
                 <a href="#contact">Let's Talk</a>
               </Button>
             </div>

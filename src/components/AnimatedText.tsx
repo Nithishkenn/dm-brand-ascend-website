@@ -1,8 +1,8 @@
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, ReactNode } from 'react';
 
 interface AnimatedTextProps {
-  text: string;
+  text: ReactNode;
   className?: string;
   once?: boolean;
 }
