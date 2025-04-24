@@ -4,62 +4,37 @@ import AnimatedText from './AnimatedText';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-[#0B4619] text-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <AnimatedText text={<h2 className="section-title">About Us</h2>} />
-          </div>
-          
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
+              <span className="text-yellow-400 font-medium mb-4 block">ABOUT US</span>
               <AnimatedText
                 text={
-                  <div className="relative">
-                    <div className="absolute top-0 left-0 w-20 h-20 border-t-4 border-l-4 border-brand-orange -mt-4 -ml-4"></div>
-                    <img 
-                      src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                      alt="The DM Brand Company Team" 
-                      className="rounded-lg shadow-xl w-full"
-                    />
-                    <div className="absolute bottom-0 right-0 w-20 h-20 border-b-4 border-r-4 border-brand-orange -mb-4 -mr-4"></div>
-                  </div>
+                  <h2 className="text-5xl font-display font-bold mb-6 text-white">
+                    CREATIVE MINDS<br/>
+                    BEHIND THE MAGIC
+                  </h2>
+                }
+              />
+              
+              <AnimatedText
+                text={
+                  <p className="text-gray-200 leading-relaxed mb-6">
+                    The DM Brand is a team of passionate creators and strategic thinkers dedicated to transforming ideas into impactful marketing campaigns. By blending creativity and innovation, we help businesses cut through the digital noise, engage their audience, and thrive in a competitive landscape.
+                  </p>
                 }
               />
             </div>
             
             <div>
-              <AnimatedText
-                text={
-                  <h3 className="text-3xl font-bold font-display mb-6">
-                    From Legacy to Digital-First <span className="text-brand-orange">Power Moves</span>
-                  </h3>
-                }
+              <img 
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80"
+                alt="Creative Team" 
+                className="rounded-2xl shadow-2xl"
               />
-              
-              <AnimatedText
-                text={
-                  <p className="text-gray-700 mb-6 leading-relaxed">
-                    The DM Brand Company grew from deep roots in traditional marketing to become a digital-first powerhouse. Our journey began with our founder Nithish, who brings 20+ years of family legacy expertise in marketing and insurance.
-                  </p>
-                }
-              />
-              
-              <AnimatedText
-                text={
-                  <p className="text-gray-700 mb-6 leading-relaxed">
-                    We've evolved with the marketing landscape, embracing new technologies and platforms while staying true to time-tested principles of powerful storytelling and strategic thinking.
-                  </p>
-                }
-              />
-              
-              <AnimatedText
-                text={
-                  <p className="text-gray-700 leading-relaxed">
-                    Today, we partner with forward-thinking startups, bold entrepreneurs, and established businesses looking to make their next big move in the digital space.
-                  </p>
-                }
-              />
+              <div className="absolute -bottom-4 -right-4 w-20 h-20 border-b-4 border-r-4 border-yellow-400"></div>
             </div>
           </div>
         </div>
